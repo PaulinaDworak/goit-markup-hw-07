@@ -25,8 +25,8 @@
     font-size: 16px;
     line-height: 1.2;
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px $ShadowColor1, 0px 1px 1px $ShadowColor2,
+        0px 2px 1px $ShadowColor3;
     &_details {
         padding-top: 30px;
         text-align: center;
@@ -51,8 +51,8 @@
         fill: $BrandAccentColor;
         border-radius: 50%;
         outline: none;
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 250ms $TransitionTimingFunction,
+            fill 250ms $TransitionTimingFunction;
         &:is(:hover, :focus) {
             background-color: $BrandColor;
             fill: $LogoSecondaryColor;
