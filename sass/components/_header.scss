@@ -1,0 +1,101 @@
+.page-header {
+    border-bottom: 1px solid $BorderColor;
+    padding: 24px 0 25px;
+    & > .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_navigation {
+        display: flex;
+        align-items: center;
+        gap: 93px;
+    }
+}
+
+.logo {
+    font-family: $LogoFont;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: $BrandColor;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    display: inline-block;
+    &_page-header {
+        color: $LogoPrimaryColor;
+    }
+}
+
+.site-nav {
+    list-style: none;
+    letter-spacing: 0.02em;
+    display: flex;
+    gap: 46px;
+    &_element {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.17;
+        text-decoration: none;
+        color: $BrandTextColor;
+        letter-spacing: 0.02em;
+        text-align: left;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+        &:hover,
+        &:focus {
+            color: $BrandColor;
+        }
+    }
+}
+.site-nav_element--is-active {
+    color: $BrandColor;
+    &::after {
+        position: absolute;
+        width: 53px;
+        height: 4px;
+        background-color: $BrandColor;
+        border-radius: 2px;
+        top: 44px;
+        content: "";
+        justify-content: center;
+        display: flex;
+    }
+}
+.site-nav_element:hover::after,
+.site-nav_element:focus::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: $BrandColor;
+    border-radius: 2px;
+    top: 44px;
+    content: "";
+    justify-content: center;
+    display: flex;
+}
+.contact {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.17;
+    text-decoration: none;
+    color: $BrandSecondaryColor;
+    cursor: pointer;
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $BrandColor;
+        fill: $BrandColor;
+    }
+    &--email {
+        margin-right: 50px;
+    }
+}
+.email-icon,
+.tel-icon {
+    margin-right: 10px;
+}

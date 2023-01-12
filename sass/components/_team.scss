@@ -1,0 +1,61 @@
+.team-members {
+    background: $SecondaryBackgroundColor;
+    &_list {
+        list-style: none;
+        letter-spacing: 0.03em;
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        justify-content: center;
+        padding-bottom: 94px;
+        margin-bottom: -94px;
+    }
+    &_header {
+        font-weight: 700;
+        font-size: 36px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 50px;
+        padding-top: 94px;
+    }
+}
+.team-member {
+    background-color: $LogoSecondaryColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    &_details {
+        padding-top: 30px;
+        text-align: center;
+    }
+    &_position {
+        font-weight: 400;
+        font-size: 16px;
+        color: $BrandSecondaryColor;
+        line-height: 1.2;
+        display: block;
+        margin-top: 10px;
+    }
+    &_sm-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+        justify-content: center;
+        margin: 16px 32px 30px;
+    }
+    &_sm {
+        fill: $BrandAccentColor;
+        border-radius: 50%;
+        outline: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:is(:hover, :focus) {
+            background-color: $BrandColor;
+            fill: $LogoSecondaryColor;
+        }
+    }
+}
