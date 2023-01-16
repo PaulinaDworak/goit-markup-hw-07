@@ -12,21 +12,6 @@
         gap: 93px;
     }
 }
-
-.logo {
-    font-family: $LogoFont;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.17;
-    color: $BrandColor;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    display: inline-block;
-    &__page-header {
-        color: $LogoPrimaryColor;
-    }
-}
-
 .site-nav {
     list-style: none;
     letter-spacing: 0.02em;
@@ -43,26 +28,27 @@
         transition: color 250ms $TransitionTimingFunction,
             background-color 250ms $TransitionTimingFunction;
         position: relative;
+        &--is-active {
+            color: $BrandColor;
+            &::after {
+                position: absolute;
+                width: 53px;
+                height: 4px;
+                background-color: $BrandColor;
+                border-radius: 2px;
+                top: 44px;
+                content: "";
+                justify-content: center;
+                display: flex;
+            }
+        }
         &:hover,
         &:focus {
             color: $BrandColor;
         }
     }
 }
-.site-nav__element--is-active {
-    color: $BrandColor;
-    &::after {
-        position: absolute;
-        width: 53px;
-        height: 4px;
-        background-color: $BrandColor;
-        border-radius: 2px;
-        top: 44px;
-        content: "";
-        justify-content: center;
-        display: flex;
-    }
-}
+
 .site-nav__element:hover::after,
 .site-nav__element:focus::after {
     position: absolute;
