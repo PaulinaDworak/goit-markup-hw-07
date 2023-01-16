@@ -1,41 +1,55 @@
-.logo_page-footer {
+.logo__page-footer {
     color: $LogoSecondaryColor;
 }
-.address-wrapper {
-    margin-top: 20px;
-}
-.address {
-    font-style: normal;
-    color: $LogoSecondaryColor;
-    text-decoration: none;
-    line-height: 1.7;
-    font-size: 14px;
-    font-weight: 500;
-    cursor: pointer;
-    letter-spacing: 0.03em;
-}
-.footer-wrapper {
+
+.footer {
     padding: 60px 0;
     background-color: $BrandBackgroundColor;
+    &__box {
+        display: flex;
+    }
 }
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    width: fit-content;
-}
-.contact--footer-tel {
-    margin-top: 9px;
-    line-height: 1.7;
-}
-.contact--footer-email {
-    padding-top: 9px;
-}
-.footer-box {
-    display: flex;
+    margin-top: 20px;
+    &__address {
+        font-style: normal;
+        color: $LogoSecondaryColor;
+        text-decoration: none;
+        line-height: 1.7;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        letter-spacing: 0.03em;
+    }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.17;
+    }
+    &__link {
+        padding-top: 9px;
+        text-decoration: none;
+        color: $BrandSecondaryColor;
+        cursor: pointer;
+        fill: currentColor;
+        transition: color 250ms $TransitionTimingFunction,
+            fill 250ms $TransitionTimingFunction;
+        &--portfolio {
+            text-decoration: underline;
+        }
+        &:hover,
+        &:focus {
+            color: $BrandColor;
+        }
+    }
 }
 .sm {
     margin-left: 70px;
-    &_header {
+    &__header {
         font-family: $BrandMainFont;
         font-weight: 700;
         font-size: 14px;
@@ -44,7 +58,7 @@
         color: $LogoSecondaryColor;
         font-style: normal;
     }
-    &_list {
+    &__list {
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -52,7 +66,7 @@
         justify-content: center;
         margin-top: 20px;
     }
-    &_icon {
+    &__icon {
         fill: $LogoSecondaryColor;
         border-radius: 50%;
         background: $IconBackgroundColor;
@@ -65,7 +79,7 @@
 }
 .newsletter {
     margin-left: 77px;
-    &_header {
+    &__header {
         font-family: $BrandMainFont;
         font-weight: 700;
         font-size: 14px;
@@ -74,11 +88,11 @@
         color: $LogoSecondaryColor;
         font-style: normal;
     }
-    &_form {
+    &__form {
         margin-top: 20px;
         display: flex;
     }
-    &_email {
+    &__email {
         width: 348px;
         height: 50px;
         color: $NewsletterTextColor;
@@ -89,7 +103,7 @@
         margin-right: 12px;
         outline: none;
     }
-    &_btn {
+    &__btn {
         width: 200px;
         height: 50px;
         font-family: $BrandMainFont;
@@ -105,23 +119,8 @@
         padding: 10px 26px 10px 42px;
         cursor: pointer;
     }
-}
-.submit-icon {
-    fill: $LogoSecondaryColor;
-    margin-left: 18px;
-}
-.portfolio-footer_email {
-    font-size: 14px;
-    font-weight: 500;
-    font-style: normal;
-    line-height: 1.1;
-    text-decoration: underline;
-    color: $BrandSecondaryColor;
-    cursor: pointer;
-    padding-top: 9px;
-    transition: color 250ms $TransitionTimingFunction;
-    &:hover,
-    &:focus {
-        color: $BrandColor;
+    &__submit-icon {
+        fill: $LogoSecondaryColor;
+        margin-left: 18px;
     }
 }

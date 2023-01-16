@@ -6,7 +6,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    &_navigation {
+    &__navigation {
         display: flex;
         align-items: center;
         gap: 93px;
@@ -22,7 +22,7 @@
     text-decoration: none;
     letter-spacing: 0.03em;
     display: inline-block;
-    &_page-header {
+    &__page-header {
         color: $LogoPrimaryColor;
     }
 }
@@ -32,7 +32,7 @@
     letter-spacing: 0.02em;
     display: flex;
     gap: 46px;
-    &_element {
+    &__element {
         font-size: 14px;
         font-weight: 500;
         line-height: 1.17;
@@ -49,7 +49,7 @@
         }
     }
 }
-.site-nav_element--is-active {
+.site-nav__element--is-active {
     color: $BrandColor;
     &::after {
         position: absolute;
@@ -63,8 +63,8 @@
         display: flex;
     }
 }
-.site-nav_element:hover::after,
-.site-nav_element:focus::after {
+.site-nav__element:hover::after,
+.site-nav__element:focus::after {
     position: absolute;
     width: 100%;
     height: 4px;

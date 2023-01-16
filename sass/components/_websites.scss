@@ -24,11 +24,11 @@
                 1px 4px 6px $ShadowColor5;
         }
     }
-    &_box {
+    &__box {
         position: relative;
         overflow: hidden;
     }
-    &_overlay {
+    &__overlay {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -48,12 +48,12 @@
         transition: transform 250ms $TransitionTimingFunction;
         width: 370px;
     }
-    &_info {
+    &__info {
         padding: 20px 24px;
         border: 1px solid $BorderColor;
         border-top: none;
     }
-    &_category {
+    &__category {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.9;
@@ -62,6 +62,6 @@
         display: block;
     }
 }
-.websites_box:hover .websites_overlay {
+.websites__box:hover .websites__overlay {
     transform: translateY(0);
 }

@@ -1,5 +1,5 @@
 .clients {
-    &_header {
+    &__header {
         font-weight: 700;
         font-size: 36px;
         text-align: center;
@@ -7,14 +7,14 @@
         margin-bottom: 50px;
         padding-top: 94px;
     }
-    &_list {
+    &__list {
         list-style: none;
         display: flex;
         flex-direction: row;
         column-gap: 30px;
         justify-content: center;
     }
-    &_icon {
+    &__icon {
         outline: 1px solid $BrandAccentColor;
         padding: 17.71px 32px 14.25px;
         border-radius: 4px;

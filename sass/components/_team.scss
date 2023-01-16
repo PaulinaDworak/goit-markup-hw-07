@@ -1,6 +1,6 @@
 .team-members {
     background: $SecondaryBackgroundColor;
-    &_list {
+    &__list {
         list-style: none;
         letter-spacing: 0.03em;
         display: flex;
@@ -10,7 +10,7 @@
         padding-bottom: 94px;
         margin-bottom: -94px;
     }
-    &_header {
+    &__header {
         font-weight: 700;
         font-size: 36px;
         text-align: center;
@@ -27,11 +27,11 @@
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 1px 3px $ShadowColor1, 0px 1px 1px $ShadowColor2,
         0px 2px 1px $ShadowColor3;
-    &_details {
+    &__details {
         padding-top: 30px;
         text-align: center;
     }
-    &_position {
+    &__position {
         font-weight: 400;
         font-size: 16px;
         color: $BrandSecondaryColor;
@@ -39,7 +39,7 @@
         display: block;
         margin-top: 10px;
     }
-    &_sm-list {
+    &__sm-list {
         list-style: none;
         display: flex;
         flex-direction: row;
@@ -47,7 +47,7 @@
         justify-content: center;
         margin: 16px 32px 30px;
     }
-    &_sm {
+    &__sm {
         fill: $BrandAccentColor;
         border-radius: 50%;
         outline: none;
